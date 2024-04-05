@@ -1,0 +1,54 @@
+
+
+//- los templates pug no utilizan <> para las tahs de HTML
+//- La identacion es importante para saber quien es el padre o los hijos en la estructura.
+//- express soporta algo llamado block que es la forma que que podemos tomar el contenido de una pagina y colocarlo en otra pagina
+//- #{textoViajes} - Esta es otra forma de decirle que es una variable de JavaScript
+//- p #{textoViajes}
+
+
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales in nulla id molestie. Fusce dictum dolor eget rhoncus euismod. Cras posuere felis ac elit mattis commodo. Morbi sodales porttitor semper. Morbi posuere eros nec ex condimentum hendrerit. In tincidunt congue lobortis. Quisque a diam eu neque blandit porta. 
+                p Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus non urna vel ante imperdiet porttitor quis ultrices odio. Nam dictum volutpat leo, at dignissim turpis luctus vitae. Nullam eleifend, tortor sed tempor pretium, arcu diam tempor tortor, vel semper nisi metus a eros.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros" clase="img-fluid")
+
+        include ./layout/bloque_viajes
+    
+    .descuento
+        .container
+            .row 
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Marzo de 2022 - 28 de Marzo de 2022
+                        p.precio $2,500 USD
+
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
+
+
+
+
+
+
+
+
+
+
+
+
+

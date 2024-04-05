@@ -1,0 +1,41 @@
+
+//- <h1>Hola</h1> es la etiqueta normalmente conocida, pero en PUG se usa la siguiente sintraxis
+
+extends ./layout/index
+
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur eros quis mauris dictum posuere. Ut facilisis sagittis dolor. Quisque blandit id sapien id viverra. Maecenas mi est, bibendum id tempus vel, posuere sit amet augue. Suspendisse cursus enim sed aliquet vehicula. Etiam faucibus, justo quis faucibus dapibus, nibh tortor congue magna, et congue purus est eget nisl. Quisque semper, ligula et maximus interdum, ligula est lobortis elit, sit amet scelerisque mi ligula in lacus. 
+
+                p Nam accumsan, orci eget semper fringilla, nulla diam vestibulum sapien, in vehicula nisi metus in mauris. Suspendisse finibus arcu a nisi consectetur, a pharetra urna mattis. Mauris ultricies vehicula augue. Duis mollis vel ante vel gravida. Suspendisse imperdiet mollis augue at rutrum. Praesent rhoncus, libero a vulputate tincidunt, nisl felis euismod justo, sed auctor felis odio eu quam. In sed pulvinar odio. 
+
+                p Vivamus pellentesque commodo justo vel varius. Vestibulum velit enim, fringilla vel lorem at, commodo condimentum turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec dignissim nulla justo, at pellentesque lectus fermentum a. Nunc quis enim felis. Curabitur quis porta lorem, non commodo neque. Morbi ligula magna, ultricies quis dapibus non, scelerisque auctor sem. Quisque volutpat tincidunt tellus in pretium. Phasellus lacinia, ligula ut tincidunt gravida, ante risus viverra mauris, in porttitor lorem ex a magna. 
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col.md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad" class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Aliquam accumsan leo ac turpis malesuada vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque interdum lorem in dui dictum, at pretium nisi fringilla. Nulla faucibus sem eget elit commodo, non aliquet est commodo.
+                .col.md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos" class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Aliquam accumsan leo ac turpis malesuada vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque interdum lorem in dui dictum, at pretium nisi fringilla. Nulla faucibus sem eget elit commodo, non aliquet est commodo.
+                .col.md-4
+                    img(src="img/icono_precios.svg", alt="icono precios" class="img-fluid mb-4")
+                    h2.mb-4 Los mejores precios
+                    p Aliquam accumsan leo ac turpis malesuada vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque interdum lorem in dui dictum, at pretium nisi fringilla. Nulla faucibus sem eget elit commodo, non aliquet est commodo.
+
+
+
+//- Si colocamos un = despues del nombre de la tag, entonces le decimos que ya espera un valor de javascript
+//- p= textoViajes
+//- #{textoViajes} - Esta es otra forma de decirle que es una variable de JavaScript
+//- p #{textoViajes}
+
